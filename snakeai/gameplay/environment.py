@@ -25,7 +25,7 @@ class Environment(object):
                 1 = write a CSV file containing the statistics for every episode;
                 2 = same as 1, but also write a full log file containing the state of each timestep.
         """
-        self.field = Field(level_map=config['field'])
+        self.field = Field(level_map=config['field'],size=config['size'])
         self.snake = None
         self.fruit = None
         self.initial_snake_length = config['initial_snake_length']
